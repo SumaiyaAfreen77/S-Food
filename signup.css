@@ -1,0 +1,138 @@
+body, html {
+  height: 100%;
+  font-family: 'Amaranth', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.hero__img {
+  background-image: url("./assets/S4.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  right: auto;
+  left: auto;
+  z-index: 2;
+}
+
+.hero__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Add styles to the form container */
+.form {
+  font-size: 2.5rem;
+  display: flex;
+  height: 1400px;
+  width: 750px;
+  position: absolute;
+  padding: 30px 20px 20px 20px;
+  margin: 20px;
+  background-color: white;
+  opacity: 0.8;
+  filter: alpha(opacity=90);
+  top: 150px;
+  left: 100px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  font-size: 2.2rem;
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0 50px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+
+.signup__details__container {  
+  size: 100%;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+
+  }
+
+  .signup__details {
+    text-align: left;
+    
+  }
+/* Set a style for the submit button */
+.button {
+  background-image: linear-gradient(
+    to right,
+    #e73434cb  0%,
+    #d62727 50%,
+    #398d08cb 100%
+  );
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+  width: 220px;
+  height: 80px;
+  border-radius: 10px;
+  font-size: 2.2rem;
+  
+}
+
+.button:hover {
+  opacity: 1;
+  background-position: right center;
+}
+
+@media  (min-width: 1025px) {
+  
+
+.hero__img {
+  top: 0rem;
+  left: 0rem;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.form {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  font-size: 1rem;
+  top: 0px;
+  left: 28%;
+  padding-top: 10px; 
+}
+
+.Fname {
+  padding-top: -40px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  font-size: 0.8rem;
+  width: 100%;
+  margin: 5px 0 15px 0; 
+}
+
+.button{
+  height: 40px;
+  width: 150px ;
+  font-size: 0.8rem;
+  padding: 0px 0px 3px 0px ;
+}
+
+/* .click {
+  font-size: 1.2rem ;
+  margin-top: 50px;
+} */
+}
